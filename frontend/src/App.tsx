@@ -11,6 +11,7 @@ import Scans from './pages/Scans'
 import TaskDetails from './pages/TaskDetails'
 import Workflows from './pages/Workflows'
 import ApiKeySetupScreen from './components/ApiKeySetupScreen'
+import ReportComparison from './pages/ReportComparison'
 
 import { ThemeProvider } from './components/ThemeContext'
 import { ToastProvider } from './components/ToastContext'
@@ -30,6 +31,7 @@ export function AppRoutes() {
       <Route path={routes.workflows} element={<Workflows />} />
       <Route path={routes.settings} element={<Settings />} />
       <Route path={routes.task} element={<TaskDetails />} />
+      <Route path="/reports/compare" element={<ReportComparison />} />
 
       <Route path="*" element={<Navigate to={routes.dashboard} replace />} />
     </Routes>
