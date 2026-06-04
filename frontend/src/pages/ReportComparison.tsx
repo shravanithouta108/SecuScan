@@ -7,8 +7,6 @@ import {
   Cancel01Icon,
   CheckmarkCircle01Icon,
   Radar02Icon,
-  ShieldCheckIcon,
-  WarningDiamondIcon,
 } from '@hugeicons/core-free-icons'
 
 export interface Finding {
