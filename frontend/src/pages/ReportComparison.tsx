@@ -7,6 +7,8 @@ import {
   Cancel01Icon,
   CheckmarkCircle01Icon,
   Radar02Icon,
+  Alert01Icon,
+  Shield01Icon,
 } from '@hugeicons/core-free-icons'
 
 export interface Finding {
@@ -315,9 +317,9 @@ export default function ReportComparison() {
             </div>
 
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-12">
-              <ComparisonSection title="New Findings" icon={WarningDiamondIcon} findings={result.newFindings} accentClass="text-red-500" emptyMsg="No new findings." />
+              <ComparisonSection title="New Findings" icon={Alert01Icon} findings={result.newFindings} accentClass="text-red-500" emptyMsg="No new findings." />
               <ComparisonSection title="Fixed Findings" icon={CheckmarkCircle01Icon} findings={result.fixedFindings} accentClass="text-green-500" emptyMsg="No issues fixed." />
-              <ComparisonSection title="Unchanged Findings" icon={ShieldCheckIcon} findings={result.unchangedFindings} accentClass="text-gray-400" emptyMsg="No unchanged findings." />
+              <ComparisonSection title="Unchanged Findings" icon={Shield01Icon} findings={result.unchangedFindings} accentClass="text-gray-400" emptyMsg="No unchanged findings." />
 
               <div className="space-y-4">
                 <div className="flex items-center gap-4 border-b-4 border-black pb-4">
